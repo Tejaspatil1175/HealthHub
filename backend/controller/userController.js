@@ -160,7 +160,7 @@ export const addNewDoctor = catchAsyncErrors(async (req, res, next) => {
     lastName,
     email,
     phone,
-    nic,
+    aadhaar,
     dob,
     gender,
     password,
