@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useContext } from "react";
+import Hero from "../components/Hero";
+import Biography from "../components/Biography";
+import MessageForm from "../components/MessageForm";
+import Departments from "../components/Departments";
 
 const Home = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <Hero
+        title={
+       "Welcome to Healthub Medical Institute | Your Trusted Partner in Health and Wellness"
+        }
+        imageUrl={"/hero.png"}
+      />
+      <Biography imageUrl={"/about.png"} />
+      <Departments />
+      <MessageForm />
+    </>
+  );
+};
 
-export default Home
+export default Home;
