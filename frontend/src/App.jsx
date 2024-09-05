@@ -5,7 +5,6 @@ import Home from "./Pages/Home";
 import Appointment from "./Pages/Appointment";
 import AboutUs from "./Pages/AboutUs";
 import Register from "./Pages/Register";
-
 import Navbar from "./components/Navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
