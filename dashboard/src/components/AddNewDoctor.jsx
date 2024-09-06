@@ -86,7 +86,20 @@ const AddNewDoctor = () => {
   return (
     <section className="page">
       <section className="container add-doctor-form">
-        <img src="/logo.png" alt="logo" className="logo" />
+      <svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <text 
+    x="50%" 
+    y="50%" 
+    fontFamily="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" 
+    fontSize="24" 
+    fontWeight="bold" 
+    textAnchor="middle" 
+    alignmentBaseline="middle" 
+    fill="#00796B"
+  >
+    Healthub
+  </text>
+</svg>
         <h1 className="form-title">REGISTER A NEW DOCTOR</h1>
         <form onSubmit={handleAddNewDoctor}>
           <div className="first-wrapper">
