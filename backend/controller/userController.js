@@ -65,7 +65,7 @@ export const login = catchAsyncErrors(async (req, res, next) => {
 });
 
 export const addNewAdmin = catchAsyncErrors(async (req, res, next) => {
-  const { firstName, lastName, email, phone,aadhaar , dob, gender, password } =
+  const { firstName, lastName, email, phone, aadhaar, dob, gender, password } =
     req.body;
   if (
     !firstName ||
