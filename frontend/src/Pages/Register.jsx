@@ -40,7 +40,7 @@ const Register = () => {
           setLastName("");
           setEmail("");
           setPhone("");
-          setNic("");
+          setAdhaar(""); 
           setDob("");
           setGender("");
           setPassword("");

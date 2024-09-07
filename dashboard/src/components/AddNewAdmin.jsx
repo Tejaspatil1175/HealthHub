@@ -11,7 +11,7 @@ const AddNewAdmin = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [aadhaar, setAadhaar] = useState(""); // Changed from nic to aadhaar
+  const [aadhaar, setAadhaar] = useState(""); // Changed from  to aadhaar
   const [dob, setDob] = useState("");
   const [gender, setGender] = useState("");
   const [password, setPassword] = useState("");
