@@ -61,9 +61,9 @@ const Dashboard = () => {
                 <h5>{admin && `${admin.firstName} ${admin.lastName}`}</h5>
               </div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis, nam molestias. Eaque molestiae ipsam commodi neque.
-                Assumenda repellendus necessitatibus itaque.
+                  Welcome to your dashboard! Here you can view and manage all your appointments. 
+              Keep track of patient details, appointment statuses, and more.
+              Your role is crucial in ensuring smooth operations and high-quality care.
               </p>
             </div>
           </div>
