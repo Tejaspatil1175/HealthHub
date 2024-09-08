@@ -58,12 +58,12 @@ const Dashboard = () => {
             <div className="content">
               <div>
                 <p>Hello ,</p>
-                <h5>
-                  {admin && `${admin.firstName} ${admin.lastName}`}
-                </h5>
+                <h5>{admin && `${admin.firstName} ${admin.lastName}`}</h5>
               </div>
               <p>
-                Welcome to your dashboard! Here you can view and manage all your appointments. Keep track of patient details, appointment statuses, and more. Your role is crucial in ensuring smooth operations and high-quality care.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Facilis, nam molestias. Eaque molestiae ipsam commodi neque.
+                Assumenda repellendus necessitatibus itaque.
               </p>
             </div>
           </div>
@@ -78,20 +78,21 @@ const Dashboard = () => {
         </div>
         <div className="banner">
           <h5>Appointments</h5>
-          <table>
-            <thead>
-              <tr>
-                <th>Patient</th>
-                <th>Date</th>
-                <th>Doctor</th>
-                <th>Department</th>
-                <th>Status</th>
-                <th>Visited</th>
-              </tr>
-            </thead>
-            <tbody>
-              {appointments && appointments.length > 0
-                ? appointments.map((appointment) => (
+          <div className="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Patient</th>
+                  <th>Date</th>
+                  <th>Doctor</th>
+                  <th>Department</th>
+                  <th>Status</th>
+                  <th>Visited</th>
+                </tr>
+              </thead>
+              <tbody>
+                {appointments && appointments.length > 0 ? (
+                  appointments.map((appointment) => (
                     <tr key={appointment._id}>
                       <td>{`${appointment.firstName} ${appointment.lastName}`}</td>
                       <td>{appointment.appointment_date.substring(0, 16)}</td>
@@ -123,7 +124,7 @@ const Dashboard = () => {
                         </select>
                       </td>
                       <td>
-                        {appointment.hasVisited ? (
+                        {appointment.hasVisited === true ? (
                           <GoCheckCircleFill className="green" />
                         ) : (
                           <AiFillCloseCircle className="red" />
@@ -131,9 +132,12 @@ const Dashboard = () => {
                       </td>
                     </tr>
                   ))
-                : "No Appointments Found!"}
-            </tbody>
-          </table>
+                ) : (
+                  "No Appointments Found!"
+                )}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </>
